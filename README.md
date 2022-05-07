@@ -5,7 +5,7 @@ this personal template for node js
 ### clone this repo
 
 ```bash
-git clone
+git clone https://github.com/naagaraa/expressjs-boiler-template.git server
 ```
 
 ### install depedency
