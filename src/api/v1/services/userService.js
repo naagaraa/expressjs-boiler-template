@@ -1,5 +1,5 @@
 const userService = {
-  getAllUsers: (req, res) => {
+  getAllUsers: async (req, res) => {
     const user = [
       {
         api: "version 1",
@@ -21,7 +21,7 @@ const userService = {
 
     res.json(user);
   },
-  getUserById: (req, res) => {
+  getUserById: async (req, res) => {
     const user = [
       {
         api: "version 1",
