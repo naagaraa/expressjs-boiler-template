@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <title>Express Js</title>
+</head>
+<body>
+   <div class="container">
+      <div class="row d-flex justify-content-center">
+         <div class="col-6">
+            <h1>Express Js</h1>
+            <p>Fast, unopinionated, minimalist web framework for node.!</p>
+
+            <h5>structur directory</h5>
+            
+            <ul>
+               <li>node_modules</li>
+               <li>src
+                  <ul>
+                     <li>api ---> each api version have independent structur
+                        <ul>
+                           <li>
+                              v1
+                              <ul>
+                                 <li>config</li>
+                                 <li>middleware</li>
+                                 <li>models</li>
+                                 <li>routes --> each route have route (this for version 1)
+                                 </li>
+                                 <li>service</li>
+                                 <li>utils</li>
+                              </ul>
+                           </li>
+                           <li>v2
+                              <ul>
+                                 <li>config</li>
+                                 <li>middleware</li>
+                                 <li>models</li>
+                                 <li>routes --> each route have route (this for version 2)
+                                    
+                                 </li>
+                                 <li>service</li>
+                                 <li>utils</li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>routes --> wrapping all routes [apiv1, apiv2, ... n] in a single file
+                        <ul>
+                           <li>index.js</li>
+                        </ul>
+                     </li>
+                     <li>app.js</li>
+                     <li>index.html</li>
+                  </ul>
+               </li>
+               <li>test</li>
+               <li>index.js</li>
+            </ul>
+         </div>
+         <div class="col-6" >
+            <h4 class="mt-4">Route</h4>
+            <p>list of route http://localhost:3000</p>
+            <br><br>
+            <p>example route api version 1</p>
+            <ul class="list-group list-group-flush">
+               <li class="list-group-item">
+                  get | <a target="_blank" href="http://localhost:3000/api/v1">/api/v1</a>
+               </li>
+               <li class="list-group-item">
+                  get | <a target="_blank" href="http://localhost:3000/api/v1/user/all">/api/v1/user/all</a>
+               </li>
+            </ul>
+
+            <br><br>
+            <p>example route api version 2</p>
+            <ul class="list-group list-group-flush">
+               <li class="list-group-item">
+                  get | <a target="_blank" href="http://localhost:3000/api/v2">/api/v2</a>
+               </li>
+               <li class="list-group-item">
+                  get | <a target="_blank" href="http://localhost:3000/api/v2/user/all">/api/v2/user/all</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
